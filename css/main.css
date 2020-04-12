@@ -2,13 +2,15 @@
 
 /*Site container*/
 
-body {
-	color: white;
+p {
+	line-height: 30px;
+	color: black;
 }
 
 .container {
  	max-width: 960px;
  	margin: 20px auto;
+ 	font-family: Arial, Arial Narrow, sans-serif;
 }
 
 .hidden {
@@ -25,15 +27,41 @@ header {
 }
 
 #logo {
-	height: 100px;
-	width: 100px; /*10.87%*/
-	background-color: black;
+	width: 190px;
+	height: auto;
 }
+
 
 .mainNav {
 	height: 100px;
 	width: 65.218%; /*600px*/
-	background-color: black;
+	font-family: Arial Narrow, Arial, sans-serif;
+}
+
+.mainNav img {
+	height: 100px;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.mainNav ul {
+	margin-top: 40px;
+	text-align: center;
+	position: absolute;
+}
+
+.mainNav ul li {  
+	font-size: 16px;
+	line-height: 22px;
+	display: inline;
+	cursor: pointer;
+	margin-left: 30px;
+}
+
+.mainNav ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 5px;
 }
 
 /*End Header*/
@@ -46,8 +74,12 @@ main {
 
 .hero {
 	width: 100%;
-	height: 540px;
+	height: auto;
 	background-color: black;
+}
+
+.heroMain {
+	height: 540px;
 }
 
 .homePromo {
@@ -58,15 +90,17 @@ main {
 }
 
 .promoImage {
-	width: 34.783%; /*320px*/
+	width: 34.783%;
 	height: 300px;
-	background-color: black;
 }
 
 .promoText {
-	width: 58.697%; /*560px*/
-	height: 300px;
-	background-color: black;
+	width: 58.697%;
+}
+
+.promoText p {
+	padding-top: 10%;
+	padding-left: 20px;
 }
 
 /*End Index*/
@@ -74,10 +108,18 @@ main {
 /*Start Products*/
 
 #productBanner {
-	width: 100%;
-	height: 320px;
 	margin-bottom: 20px;
-	background-color: black;
+}
+
+#productBanner img {
+	width: 100%;
+	height: auto;
+}
+
+#productBanner h4 {
+	position: absolute;
+	padding-left: 110px;
+	padding-top: 95px;
 }
 
 .productPromo {
@@ -88,8 +130,14 @@ main {
 
 .productPromoImage {
 	width: 100%;
-	height: 200px;
-	background-color: black;
+	height: auto;
+	border-radius: 5px;
+	box-sizing: border-box;
+}
+
+.productPromoImage:hover {
+	cursor: pointer;
+	border: 4px solid #F05423;
 }
 
 .productInfo {
@@ -102,22 +150,24 @@ main {
 #productDisplay {
 	min-width: 200px;
 	height: 300px;
-	background-color: black;
 	margin-right: 40px;
 }
 
 .productPromoText {
-	width: 73.915%; /*680px*/
+	width: 73.915%; 
 	height: 300px;
-	background-color: black;
+}
+
+.productPromoText p {
+	padding-top: 10%;
 }
 
 .selectedProduct {
-	background-color: blue;
+	border: 4px solid #F05423;
 }
 
-.productText {
-	color: white;
+.selectedProduct:hover {
+	cursor: default;
 }
 
 /*End Products*/
@@ -126,9 +176,12 @@ main {
 
 .contactBanner {
 	width: 100%;
-	height: 200px;
 	margin-bottom: 20px;
-	background-color: black;
+}
+
+.contactBanner img {
+	width: 100%;
+	height: auto;
 }
 
 .contactBox {
@@ -139,7 +192,41 @@ main {
 .contactForm {
 	width: 50%;
 	height: 640px;
-	background-color: black;
+}
+
+.contactForm h2 {
+	font-size: 32px;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+textarea {
+	width: 100%;
+	max-width: 100%;
+	min-width: 100%;
+	height: 100px;
+	max-height: 200px;
+	min-height: 100px;
+}
+
+input {
+	width: 100%;
+}
+
+.formButtons {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.formButtons .button {
+	width: 70px;
+	border-radius: 5px;
+}
+
+.formButtons .button:hover {
+	filter: invert(100%);
+	cursor: pointer;
 }
 
 .mapInfo {
@@ -149,14 +236,22 @@ main {
 .contactInfo {
 	width: 450px;
 	height: 170px;
-	background-color: black;
 	margin-bottom: 20px;
+}
+
+.contactInfo p {
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 #map {
 	width: 450px;
 	height: 450px;
-	background-color: black;
+}
+
+#map iframe {
+	width: 100%;
+	height: 100%;
 }
 
 /*End Contact*/
@@ -170,15 +265,17 @@ main {
 }
 
 .aboutText {
-	width: 66.5%; /*600px*/
+	width: 66.5%;
 	height: 420px;
-	background-color: black;
+}
+
+.aboutText p {
+	padding-left: 5px;
 }
 
 .aboutImage {
-	width: 33.25%; /*300px*/
+	width: 33.25%; 
 	height: 420px;
-	background-color: black;
 }
 
 .leftMargin {
@@ -208,18 +305,28 @@ main {
 }
 
 .beerImage {
-	width: 66.5%; /*600px*/
-	height: 420px;
-	background-color: black;
+	width: 540px; 
+}
+
+.beerImage img {
+	width: 100%;
 }
 
 .beerText {
-	width: 33.25%; /*300px*/
+	width: 33.25%;
 	height: 420px;
-	background-color: black;
+}
+
+.beerText p {
+	padding-left: 5px;
+	padding-top: 5px;
 }
 
 .beerImageBox {
+	display: none;
+}
+
+.beerTextLow {
 	display: none;
 }
 
@@ -233,24 +340,57 @@ footer {
 	justify-content: space-between;
 	margin-right: 20px;
 	margin-left: 20px;
-}
-
-#footLogo {
-	height: 100px;
-	width: 100px;
-	background-color: black;
+	font-family: Arial Narrow, Arial, sans-serif;
 }
 
 .footNav {
 	height: 100px;
-	width: 65.25%;
-	background-color: black;	
+	width: 50.25%;
+}
+
+.footNav img {
+	height: 100px;
+	width: 100%;
+	border-radius: 20px;
+}
+
+.footNav ul {
+	margin-top: 40px;
+	text-align: center;
+	position: absolute;
+}
+
+.footNav ul li {  
+	font-size: 14px;
+	line-height: 22px;
+	display: inline;
+	cursor: pointer;
+	margin-left: 30px;
+}
+
+.footNav ul li a {
+	text-decoration: none;
+	color: white;
+	padding: 3%;
 }
 
 #socials {
 	height: 100px;
-	width: 19.566%; /*180px*/
-	background-color: black;
+	width: 10%;
+	margin-right: 20px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+}
+
+#socials img {
+	margin-top: 35px;
+	margin-left: 5px;
+}
+
+#socials img:hover {
+	padding-top: 3px;
+	opacity: 75%;
 }
 
 /*End Footer*/
@@ -260,94 +400,59 @@ footer {
 
 	/*Start Header*/
 
-	header {
-
-	}
-
-	#logo {
-
-	}
-
-	.mainNav {
-
-	}
+	.mainNav ul li {  
+	margin-left: 24px;
+}
 
 	/*End Header*/
 
 	/*Start Index*/
 
-	.hero {
-
-	}
-
-	.homePromo {
-
+	.heroMain {
+		height: 320px;
 	}
 
 	.promoImage {
 		width: 180px;
 		height: 180px;
-		background-color: grey;
 		position: absolute;
 		margin-left: 20px;
 		margin-top: 20px;
 	}
 
+	.promoImage img {
+		width: 180px;
+		height: auto;
+	}
+
 	.promoText {
 		width: 100%;
+		padding-left: 215px;
 	}
 
 	/*End Index*/
 
 	/*Start product*/
 
-	#productBanner {
-
-	}
-
 	.productPromo {
 		grid-gap: 20px;
 	}
 
-	.productPromoImage {
-		height: 170.75px;
-	}
-
-	.productInfo {
-
-	}
-
 	#productDisplay {
-		width: 155px;
-		height: 260px;
-		background-color: grey;
 		position: absolute;
-		margin-left: 20px;
-		margin-top: 20px;
 	}
 
 	.productPromoText {
 		width: 100%;
 	}
 
+	.productPromoText p {
+		padding-left: 210px;
+	}
+
 	/*End product*/
 
 	/*Start Contact*/
-
-	.contactBanner {
-
-	}
-
-	.contactBox {
-
-	}
-
-	.contactForm {
-	
-	}
-
-	.mapInfo {
-	}
 
 	.contactInfo {
 		width: 371.5px;
@@ -363,18 +468,23 @@ footer {
 
 	/*Start About*/
 
-	.aboutBox {
-
-	}
-
 	.aboutText {
 		width: 100%;
+	}
+
+	.aboutTopText p {
+		padding-right: 255px;
+		padding-top: 12px;
 	}
 
 	.aboutImage {
 		width: 227.5px;
 		height: 320px;
 		background-color: grey;
+	}
+
+	.aboutImage img {
+		height: 100%;
 	}
 
 	.aboutTop {
@@ -387,6 +497,11 @@ footer {
 		position: absolute;
 		margin-left: 20px;
 		margin-top: 20px;
+	}
+
+	.aboutTextLow {
+		padding-left: 255px;
+		padding-top: 12px;
 	}
 
 	.leftMargin {
@@ -417,38 +532,43 @@ footer {
 	.beerImageBox {
 		display: flex;
 		flex-direction: row;
-		justify-content: space-between;
 	}
 
-	.beerImage2 {
-		width: 50%;
-		height: 560px;
-		background-color: black;
+	.mainBeerImage {
+		width: 100%;
 	}
 
-	.secondBeerImage {
-		margin-left: 20px;
+	.secondBeerImage img {
+	 	width: 100%;
 	}
 
+	.beerTextLow {
+		display: flex;
+		margin-top: 20px;
+	}
+
+	.beerTextLow p {
+		margin-left: 5px;
+	}
 
 	/*End Beer*/
 
 	/*Start Footer*/
 
-	footer {
-
-	}
-
-	#footLogo {
-
-	}
-
-	.footNav {
-		width: 59.2%;
+	.footNav ul li {  
+	font-size: 12px;
+	line-height: 20px;
+	margin-left: 15px;
 	}
 
 	#socials {
+		display: flex;
+		flex-direction: row;
+		margin-left: 12px;
+	}
 
+	#youtubeIcon, #facebookIcon, #twitterIcon, #instagramIcon {
+		width: 20px;
 	}
 
 	/*End Footer*/
@@ -460,31 +580,16 @@ footer {
 
 	/*Start Header*/
 
-	header {
-
-	}
-
-	#logo {
-
-	}
-
-	.mainNav {
-
+	.mainNav ul li {
+		margin-left: 5px;
 	}
 
 	/*End Header*/
 
 	/*Start Index*/
 
-	.hero {
-	}
-
 	.heroMain {
-
-	}
-
-	.heroAlt {
-
+		height: 328.09px;
 	}
 
 	@keyframes heroImageChange {
@@ -508,11 +613,11 @@ footer {
 
 	#hero1 {
 		margin-left: 45%;
-		top: 676.5px;
+		position: absolute;
 	}
 
 	#hero2 {
-		top: 676.5px;
+		position: absolute;
 		margin-left: 50%;
 	}
 
@@ -524,44 +629,32 @@ footer {
 		cursor: default;
 	}
 
-	.homePromo {
-
-	}
-
 	.promoImage {
 		display: none;
 	}
 
 	.promoText {
+		padding-left: 5px;
+	}
 
+	.promoText p {
+		padding-left: 10px;
 	}
 
 	/*End Index*/
 
 	/*Start product*/
 
-	#productBanner {
-
-	}
-
-	.productPromo {
-
-	}
-
-	.productPromoImage {
-		height: 120.75px;
-	}
-
-	.productInfo {
-
-	}
-
 	#productDisplay {
 		width: 48%;
 		height: 375px;
-		background-color: black;
 		position: relative;
 		margin: 0;
+	}
+
+	#productDisplay img {
+		height: 100%;
+		width: auto;
 	}
 
 	.productPromoText {
@@ -569,31 +662,16 @@ footer {
 		height: 375px;
 	}
 
+	.productPromoText p {
+		padding-left: 10px;
+	}
+
 	/*End product*/
 
 	/*Start Contact*/
 
-	.contactBanner {
-
-	}
-
 	.contactBox {
 		display: none;
-	}
-
-	.contactForm {
-	
-	}
-
-	.mapInfo {
-	}
-
-	.contactInfo {
-
-	}
-
-	#map {
-
 	}
 
 	.smallContacts {
@@ -604,33 +682,40 @@ footer {
 	}
 
 	.contactInfoSmall {
+		display: flex;
 		width: 65%;/*353px*/
 		height: 170px;
-		background-color: black;
 	}
 
 	#mapSmall {
 		width: 170px;
 		height: 170px;
-		background-color: black;
+	}
+
+	#mapSmall iframe {
+		width: 100%;
+		height: 100%;
+		display: inline;
 	}
 
 	.contactFormWide {
 		width: 100%;
 		height: 450px;
-		background-color: black;
+		display: flex;
+		flex-direction: column;
 	}
+
+	.contactFormWide h2 {
+		margin-top: 20px;
+		font-size: 32px;
+		text-align: center;
+		padding-bottom: 20px;
+	}
+
 
 	/*End Contact*/
 
 	/*Start About*/
-
-	.aboutBox {
-
-	}
-
-	.aboutText {
-	}
 
 	.aboutTopText {
 		display: none;
@@ -638,10 +723,6 @@ footer {
 
 	.aboutImage {
 		display: none;
-	}
-
-	.aboutTop {
-
 	}
 
 	.aboutBot {
@@ -652,15 +733,7 @@ footer {
 
 	.selectAboutImage {
 		width: 48%;
-		height: 420px;
-		background-color: black;
-	}
-
-	.leftMargin {
-
-	}
-
-	.leftMargin2 {
+		height: auto;
 	}
 
 	.leftMargin3 {
@@ -670,8 +743,14 @@ footer {
 	.leftAbout, .rightAbout {
 		display: flex;
 		opacity: 90%;
+		width: 100%;
 	}
-	
+
+	.aboutTextLow {
+		padding-left: 10px;
+		padding-right: 10px;
+		height: 100%;
+	}
 
 	.leftAbout:hover, .rightAbout:hover {
 		cursor: pointer;
@@ -683,28 +762,24 @@ footer {
 
 	/*Start Beer*/
 
-	.beerText {
-
-	}
-
-	.botBeer {
-
-	}
-
-	.beerImage {
-
-	}
-
 	.beerImageBox {
-
+		width: 100%;
+		height: auto;
+		margin-right: 20px;
 	}
 
 	.beerImage2 {
 		width: 100%;
-		height: 560px;
+		height: auto;
+	}
+
+	.mainBeerImage {
+		width: 100%;
 	}
 
 	.altBeerImage {
+		width: 100%;
+		height: auto;
 	}
 
 	.secondBeerImage {
@@ -731,26 +806,48 @@ footer {
 		animation-duration: 1s;
 	}
 
+	.beerTextLow {
+		display: none;
+	}
+
 	/*End Beer*/
 
 	/*Start Footer*/
 
-	footer {
-
-	}
-
-	#footLogo {
-
-	}
-
 	.footNav {
-		width: 59.2%;
+		display: none;
 	}
 
-	#socials {
+	#toTop {
+		display: inline;
+		width: 20%;
+		height: 60px;
+		background-color: white;
+		border-radius: 20px;
+		text-align: center;
+		position: relative;
+		border: 4px solid black;
+		margin-top: 10px;
+	}
 
+	#toTop a {
+		text-decoration: none;
+		color: black;
+		font-weight: bold;
+	}
+
+	#toTop:hover {
+		filter: invert(100%);
+	}
+
+	#topSpan {
+		width: 100%;
+		height: 100%;
+		position: absolute;
+		left: 0;
+		top: 0;
+		padding-top: 20px;
 	}
 
 	/*End Footer*/
-
 }
